@@ -39,6 +39,7 @@ class Death(Scene):
         print Death.quips[randint(0, len(self.quips)-1)]
         exit(1)
 
+# texts shortened because laziness
 class CentralCorridor(Scene):
 
     def enter(self):
