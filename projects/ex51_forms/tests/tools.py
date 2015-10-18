@@ -15,7 +15,7 @@ def assert_response(resp, contains=None, matches=None, headers=None,
 
     if matches:
         reg = re.compile(matches)
-        assert reg.marches(resp.data), "Response does not match %r" % matches
+        assert reg.match(resp.data), "Response does not match %r" % matches
 
     if headers:
         assert_equal(resp.headers, headers)
